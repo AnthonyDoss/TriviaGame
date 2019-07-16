@@ -1,0 +1,55 @@
+<!--
+Name: Anthony Doss
+ID: 991532603
+Assignment #1: Trivia Game
+Date Created: January 31, 2019
+Description: A trivia game that asks the user questions. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="QuizzStyle.css" rel="stylesheet" />
+    <title>Trivia</title>
+  </head>
+
+  <body>
+    <div id="quizContainer" class="container">
+      <div class="title">Trivia Quizz</div>
+      <div id="question" class="question"></div>
+      <label class="option"
+        ><input type="radio" name="option" value="1"/><span id="opt1"></span
+      ></label>
+      <label class="option"
+        ><input type="radio" name="option" value="2"/><span id="opt2"></span
+      ></label>
+      <label class="option"
+        ><input type="radio" name="option" value="3"/><span id="opt3"></span
+      ></label>
+      <label class="option"
+        ><input type="radio" name="option" value="4"/><span id="opt4"></span
+      ></label>
+      <button id="nxt" class="nxt" onclick="loadNextQuestion()" ;>Next</button>
+    </div>
+    <div id="result" class="container result" style="display:none;"></div>
+    <center>
+      <div id="helpContainer" class="container2">
+        <button id="help" class="btn">Help</button>
+        <button id="reset" class="btn" onclick="restart()" ;>Reset</button>
+      </div>
+      <div id="hint" style="visibility: hidden;">
+        <p>
+          Select the right answer, then click next.<br />The Score will be shown
+          at the end<br />Hit the reset button to try again/restart
+        </p>
+      </div>
+
+      <img src="image/spin.gif" />
+    </center>
+
+    <script type="text/javascript" src="trivia.js"></script>
+  </body>
+</html>
